@@ -10,11 +10,11 @@ First you'll need to install the Identity Server 4 templates.
 
 Then you will create an empty solution and project.  
 
-  dotnet new sln -n CoreMS.IdentityServer
-  mkdir src
-  cd src
-  dotnet new is4empty
-  dotnet new is4ui
+    dotnet new sln -n CoreMS.IdentityServer
+    mkdir src
+    cd src
+    dotnet new is4empty
+    dotnet new is4ui
 
 ### Configuring Clients
 
