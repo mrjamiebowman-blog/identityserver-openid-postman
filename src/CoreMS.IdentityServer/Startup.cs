@@ -30,6 +30,7 @@ namespace CoreMS.IdentityServer
             })
                 .AddInMemoryIdentityResources(Config.IdentityResources)
                 .AddInMemoryApiScopes(Config.ApiScopes)
+                .AddInMemoryApiResources(Config.ApiResources)
                 .AddInMemoryClients(Config.Clients);
 
             // not recommended for production - you need to store your key material somewhere secure

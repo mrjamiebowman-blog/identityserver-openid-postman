@@ -18,10 +18,10 @@ namespace CoreMS.IdentityServer
         public static IEnumerable<ApiResource> ApiResources =>
             new ApiResource[]
             {
-                new ApiResource("addressvalidator", "CoreMS APIs")
+                new ApiResource("corems", "CoreMS APIs")
                 {
                     Scopes = {
-                        "addressvalidator.fullaccess"
+                        "microservice.fullaccess"
                     }
                 }
             };
@@ -29,7 +29,7 @@ namespace CoreMS.IdentityServer
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("addressvalidator.fullaccess"),
+                new ApiScope("microservice.fullaccess"),
              };
 
         public static IEnumerable<Client> Clients =>
@@ -43,7 +43,7 @@ namespace CoreMS.IdentityServer
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     AllowedScopes =
                     {
-                        "addressvalidator.fullaccess"
+                        "microservice.fullaccess"
                     }
                 }
             };
